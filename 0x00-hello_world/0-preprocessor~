@@ -1,4 +1,0 @@
-#!/bin/bash
-read YEBO
-sleep 3
-echo "heh wena $YEBO"
