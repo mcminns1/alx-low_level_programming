@@ -1,0 +1,2 @@
+#!/bin/bash
+gcc $CFILE | mv $CFILE cisfun | chmod +x cisfun
