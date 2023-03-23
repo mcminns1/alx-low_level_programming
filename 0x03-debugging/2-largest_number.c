@@ -24,7 +24,14 @@ int largest_number(int a, int b, int c)
 	{
 		largest = a;
 	}
-
+	else if (c > a && c > b)
+	{
+		largest = c;
+	}
+	else
+	{
+		largest = c;
+	}
 	return (largest);
 	putchar('\n');
 }
