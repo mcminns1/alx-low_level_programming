@@ -14,5 +14,6 @@ char *_strchr(char *s, char c)
 
 	for (i = 0; i < *s; i++)
 		*s = c;
+		printf("%i \n", *s);
 	return (NULL);
 }
