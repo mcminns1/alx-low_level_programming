@@ -11,4 +11,5 @@
 char *_strchr(char *s, char c)
 {
 	strchr(s, c);
+	return (NULL);
 }
