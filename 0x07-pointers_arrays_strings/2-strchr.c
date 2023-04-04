@@ -10,6 +10,8 @@
 
 char *_strchr(char *s, char c)
 {
-	strchr(s, c);
+	int i;
+
+	for (i = 0; i < *s; c++)
 	return (NULL);
 }
