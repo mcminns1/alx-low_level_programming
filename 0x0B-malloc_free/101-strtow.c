@@ -92,7 +92,7 @@ void create_word(char **words, char *str, int start, int end, int index)
 {
 	int i, j;
 
-	i = end = start;
+	i = end - start;
 	words[index] = (char *)malloc(sizeof(char) * (i + 1));
 
 	for (j = 0; start < end; start++, j++)
