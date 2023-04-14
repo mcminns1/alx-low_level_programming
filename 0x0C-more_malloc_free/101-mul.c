@@ -9,27 +9,22 @@
 
 int main(int argc, char *argv[])
 {
-	unsigned long mul;
-	int i, j;
-
 	if (argc != 3)
 	{
 		printf("Error\n");
-		exit(98);
+		return (98);
 	}
 
-	for (i = 1; i < argc; i++)
+	int x = atoi(argv[1]);
+	int y = atoi(argv[2]);
+
+	if (x == 0 || y == 0)
 	{
-		for (j = 0; argv[i][j] > 57 || argv[i][j] < 48;)
-		{
-			if (argv[i][j] > 57 || argv[i][j] < 48)
-			{
-				printf("Error\n");
-				exit(98);
-			}
-		}
+		printf("0\n");
+		return (0);
 	}
-	mul = atol(argv[1]) * atol(argv[2]);
-	printf("%lu\n", mul);
+
+	printf("%d\n", x * y);
+
 	return (0);
 }
