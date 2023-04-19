@@ -10,16 +10,12 @@
 
 void array_iterator(int array, size_t size, void (action)(int))
 {
-	size_t i;
-	if (!array || !action)
-	{
-		return;
-	}
+	int i;
 
-	i = 0;
-	while (i < size)
+	if (!array || !action)
+		return;
+	for (i = 0; i < (int) size; i++)
 	{
 		action(array[i]);
-		i++;
 	}
 }
