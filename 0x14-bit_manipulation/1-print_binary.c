@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* prijnt_binary - prints the binary representation
+* print_binary - prints the binary representation
 * of a number
 * @n: unsigned long int
 * return: no return
