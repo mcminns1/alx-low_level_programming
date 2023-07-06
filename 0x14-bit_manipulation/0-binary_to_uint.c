@@ -14,7 +14,7 @@ unsigned int binary_to_unit(const char *b)
 
 	if (!b)
 		return (0);
-	
+
 	ui = 0;
 
 	for (len = 0; b[len] != '\0'; len++)
@@ -24,7 +24,7 @@ unsigned int binary_to_unit(const char *b)
 	{
 		if (b[len] != '0' && b[len] != '1')
 		{
-			return(0);
+			return (0);
 		}
 
 		if (b[len] & 1)
